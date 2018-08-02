@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+<title>Steven Jannette</title>
+<meta charset = "UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type = "text/css" href = "css/kjstyles.css">
+
+<style>
+/*Main Background*/
+div.ks-bgimg {
+	background-image:url('images/main_img.jpg');
+}
+
+
+/*Main Section*/
+section.ks-main_section {
+	padding-bottom:50px;
+}
+
+section.ks-main_section2 {
+	padding-top:0px;
+}
+
+a.kj-bluetext_link:link,
+a.kj-bluetext_link:visited {
+	color:#2196F3;
+}
+
+a.kj-bluetext_link:hover,
+a.kj-bluetext_link:active {
+	text-decoration:underline;
+}
+
+
+/*Featured Work Component*/
+div.ks-table_quart .ks-cell {
+	position:relative;
+	height:300px;
+	padding:0px;
+}
+
+div.ks-table_quart img {
+	width:100%;
+}
+
+div.kj-featured_work {
+	padding:0px 10px;
+}
+
+div.kj-desc h4 {
+	color:#444444;
+	text-align:center;
+	font-size:1.5em;
+	margin-bottom:10px;
+}
+
+div.kj-desc p {
+	text-align:left;
+	font-size:1em;
+	line-height:normal;
+}
+
+div.kj-desc_link { /*border:1px solid red;*/
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}
+
+div.kj-desc_link p {
+	text-align:center;
+	font-size:1em;
+	line-height:normal;
+}
+
+a.kj-app_link:link,
+a.kj-app_link:visited {
+	color:#2196F3;
+	text-transform:uppercase;
+}
+
+a.kj-app_link:hover,
+a.kj-app_link:active {
+	color:#0A6FC2;
+}
+
+
+/*Contact Component*/
+div.kj-contact_head_wrap {
+	background-color:#D3D3D3;  /*#9B9EA3;*/   /*#00ACE6;*/
+	height:350px;
+}
+
+div.kj-contact_headimg,
+div.kj-contact_headtxt {
+	width:50%;
+	float:left;
+}
+
+div.kj-contact_headimg {
+	height:100%;
+}
+
+div.kj-contact_headimg img {
+	width:100%;
+	height:100%;
+}
+
+div.kj-contact_headtxt {
+	text-align:center;
+	padding-top:50px;
+}
+
+div.kj-contact_desc {
+	display:inline-block;
+}
+
+div.kj-contact_desc h1 {
+	color:#FFFFFF;
+	text-align:left;
+	font-size:2em;
+	margin:0px;
+	margin-bottom:25px;
+}
+
+div.kj-contact_desc p {
+	color:#FFFFFF;
+	text-align:left;
+	margin-bottom:5px;
+}
+
+span.kj-contact_contacticon,
+span.kj-contact_headlink_txt {
+	vertical-align:text-top;
+}
+
+a.kj-contact_contactlink:link,
+a.kj-contact_contactlink:visited {
+	display:inline-block;
+	color:#FFFFFF;
+	font-size:1em;
+}
+
+span.kj-contact_contacticon {
+	font-size:1.4em;
+}
+
+
+/*All Media Queries*/
+@media only screen and (max-width:900px) {
+	/*Main Header*/
+	div.kj-heading_name h1 {
+		font-size:3em;
+	}
+	
+	div.kj-heading_name p {
+		font-size:1.4em;
+	}
+	
+	
+	/*Background Main*/	
+	div.kj-contact_headimg,
+	div.kj-contact_headtxt {
+		width:100%;
+		float:none;
+	}
+	
+	
+	/*Main Section*/
+	div.ks-main_content h2 {
+		text-align:center;
+	}
+	
+	/*Featured Work Component*/
+	div.ks-table_quart .ks-cell {
+		border-bottom:1px solid #9B9EA3;
+		height:370px;
+		margin-bottom:30px;
+	}
+	
+	div.ks-table_quart .ks-cell:first-child,
+	div.ks-table_quart .ks-cell:nth-child(2) {
+		border-bottom:1px solid #9B9EA3;
+	}
+	
+	
+	/*Contact Component*/
+	div.kj-contact_head_wrap { /*border:2px solid black;*/
+		max-width:500px;
+		height:auto;
+		margin:auto;
+	}
+	
+	div.kj-contact_headtxt { /*border:2px solid white;*/
+		width:100%;
+		padding:0px;
+		margin:auto;
+		padding:20px 0px 30px 0px;
+	}
+	
+	div.kj-contact_desc h1 {
+		text-align:center;
+	}
+	
+}
+
+@media only screen and (max-width:570px) {
+	/*Main Header*/
+	div.kj-heading_name {
+		display:none;
+	}
+	
+	
+	/*Featured Work Component*/
+	div.ks-table_quart .ks-cell {
+		height:470px;
+	}
+	
+	div.ks-table_quart .ks-cell:nth-child(3) {
+		border-bottom:1px solid #9B9EA3;
+	}
+}
+
+@media only screen and (max-width:420px) {
+	/*Featured Work Component*/
+	div.ks-table_quart .ks-cell {
+		height:370px;
+	}
+}
+
+@media only screen and (max-width:360px) {
+	/*Featured Work Component*/
+	div.ks-table_quart .ks-cell {
+		height:340px;
+	}
+	
+	span.kj-contact_headlink_txt {
+		font-size:0.8em;
+	}
+}
+
+</style>
+</head>
+
+<body>
+<!--Begin Header-->
+<header class = "ks-main_heading ks-clearfix">
+	
+	<div class = "ks-table ks-table_third_noresp ks-noborder">
+		
+		<div class = "ks-row">
+			
+			<!--Begin Cell One-->
+			<div class = "ks-cell">
+			
+				<div class = "ks-heading_logo">
+					<a href = "index.html">
+						<img alt = "Steven Jannette Logo" src = "images/img_logo.png" width = "200" height = "114" />
+					</a>
+				</div>
+				
+			</div>
+			<!--End Cell One-->
+			
+			<!--Begin Cell Two-->
+			<div class = "ks-cell">
+			
+				<ul class = "ks-heading_links">
+					<li><a class = "ks-heading_link" href = "#kj-about1">About</a></li>
+					
+					<li><a class = "ks-heading_link" href = "#kj-featured_work1">Featured Work</a></li>
+					
+					<li><a class = "ks-heading_link" href = "#kj-contact1">Contact</a></li>
+				</ul>
+				
+			</div>
+			<!--End Cell Two-->
+			
+			<!--Begin Cell Three-->
+			<div class = "ks-cell">
+				
+				<div class = "kj-name_tagline">
+				
+					<div class = "kj-heading_name">
+						<h1>Steven Jannette</h1>
+						
+						<p>Get With The Program</p>
+					</div>
+					
+					<div id = "ks-menu_lines1" class = "ks-menu_lines ks-nodisplay">
+						<div class = "ks-menu_line"></div>
+						<div class = "ks-menu_line"></div>
+						<div class = "ks-menu_line"></div>
+					</div>
+				
+				</div>
+				
+			</div>
+			<!--End Cell Three-->
+			
+		</div>
+		
+	</div>
+	
+</header>
+
+<header id = "ks-mobile_main_heading1" class = "ks-mobile_main_heading">
+	
+	<div id = "ks-mobile_heading_wrapper1" class = "ks-mobile_heading_wrapper">
+		<div class = "ks-mobile_heading_wrap ks-clearfix">
+			<div id = "ks-mobile_heading_close1" class = "ks-mobile_heading_close">&times;</div>
+			
+			<div class = "ks-mobile_heading_logo">
+				<img alt = "Steven Jannette Logo" src = "images/img_logo.png" width = "100" height = "57" />
+			</div>
+		</div>
+		
+		<nav class = "ks-mobile_heading_link_wrap">
+			<ul class = "ks-mobile_heading_links">
+				<li><a class = "ks-mobile_heading_link" href = "#kj-about1">About</a></li>
+				
+				<li><a class = "ks-mobile_heading_link" href = "#kj-featured_work1">Featured Work</a></li>
+				
+				<li><a class = "ks-mobile_heading_link" href = "#kj-contact1">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<!--End Header-->
+
+
+<!--Begin Background Image-->
+<div class = "ks-bgimg">
+	<!--<div class = "ks-bgshade">
+		<div class = "ks-bgtext">
+			<h1>Your Title Goes Here</h1>
+		</div>
+	</div>-->
+</div>
+<!--End Background Image-->
+
+
+<!--Begin Main Content-->
+<section id = "kj-about1" class = "ks-main_section ks-main_section1">
+	<div class = "ks-main_content ks-main_content1">	
+		<h2>About Me</h2>
+		
+		<p>
+			I write applications, mostly in Python and Javascript (and some other languages, too). 
+			I solve problems; I abide. 
+			Please feel free to click through my <a id = "kj-bluetext_link1" class = "kj-bluetext_link" href = "#kj-featured_work1">featured work</a> and have a look at a some of the things I've done, or check out my profile on 
+			<a class = "kj-bluetext_link" href = "https://github.com/kjannette" target = "_blank">Github</a>.
+		</p>
+
+		<p>
+			When I'm not making machines go, 
+			I like to take photographs. 
+			I guess that's just making a different kind of machine go, though, isn't it? 
+			I share the better pics I take with the world via <a class = "kj-bluetext_link" href = "http://www.instagram.com/dancin.ted/" target = "_blank">Instagram</a>. Check those out, too.
+		</p>
+
+		<p>Thanks for stopping in.</p>
+		
+	</div>
+</section>
+
+
+<section id = "kj-featured_work1" class = "ks-main_section ks-main_section2">
+	<div class = "ks-main_content ks-main_content2">
+		<h2>Featured Work</h2>
+		
+		<!--Begin Table Stack-->
+		<div class = "ks-table ks-table_quart ks-noborder">
+		
+			<div class = "ks-row">
+				
+				<!--Begin Cell One-->
+				<div class = "ks-cell">
+					
+					<div class = "kj-featured_work">
+						<a href = "https://expense--track.herokuapp.com/" target = "_blank">
+							<img alt = "Expense Track" src = "images/expense_track.jpg" width = "300" height = "200" />
+						</a>
+						
+						<div class = "kj-desc">
+							<h4>Expense Track</h4>
+							
+							<p>A monthly expense tracker implemented in JavaScript utilizing React/Redux.</p>
+						</div>
+					</div>
+					
+					<div class = "kj-desc_link">
+						<p><a class = "kj-app_link" href = "https://github.com/kjannette/Expense-Track" target = "_blank">View on Github</a>
+					</div>
+				</div>
+				<!--End Cell One-->
+				
+				<!--Begin Cell Two-->
+				<div class = "ks-cell">
+				
+					<div class = "kj-featured_work">
+						<a href = "https://bookbrowser-app.herokuapp.com/" target = "_blank">
+							<img alt = "Book Browser" src = "images/book_browser.jpg" width = "300" height = "200" />
+						</a>
+						
+						<div class = "kj-desc">
+							<h4>Book Browser</h4>
+							
+							<p>An app to reserve and track books of interest implemented in Javascript utilizing React.</p>
+						</div>
+					</div>
+					
+					<div class = "kj-desc_link">
+						<p><a class = "kj-app_link" href = "https://github.com/kjannette/reactnd-project-bookbrowser" target = "_blank">View on Github</a>
+					</div>
+				</div>
+				<!--End Cell Two-->
+				
+				<!--Begin Cell Three-->
+				<div class = "ks-cell">
+					
+					<div class = "kj-featured_work">
+						<a href = "https://budgetize--app.herokuapp.com/" target = "_blank">
+							<img alt = "Budgetize" src = "images/budgetize.jpg" width = "300" height = "200" />
+						</a>
+						
+						<div class = "kj-desc">
+							<h4>Budgetize</h4>
+							
+							<p>A personal budget calculator implemented in JavaScript.</p>
+						</div>
+					</div>
+					
+					<div class = "kj-desc_link">
+						<p><a class = "kj-app_link" href = "https://github.com/kjannette/Budgetize" target = "_blank">View on Github</a>
+					</div>
+				</div>
+				<!--End Cell Three-->
+				
+				<!--Begin Cell Four-->
+				<div class = "ks-cell">
+					
+					<div class = "kj-featured_work">
+						<a href = "https://posteddit-app.herokuapp.com/" target = "_blank">
+							<img alt = "Posteddit" src = "images/posteddit.jpg" width = "300" height = "200" />
+						</a>
+						
+						<div class = "kj-desc">
+							<h4>Posteddit</h4>
+							
+							<p>My take the popular site Reddit, implemented in Python utilizing Django.</p>
+						</div>
+					</div>
+					
+					<div class = "kj-desc_link">
+						<p><a class = "kj-app_link" href = "https://github.com/kjannette/posteddit" target = "_blank">View on Github</a>
+					</div>
+				</div>
+				<!--End Cell Four-->
+				
+			</div>
+			
+		</div>
+		<!--End Table Stack-->
+		
+	</div>
+</section>
+
+
+<section id = "kj-contact1" class = "ks-main_section ks-main_section2">
+	<div class = "ks-main_content ks-main_content2">	
+		<h2>Contact Me</h2>
+		
+		<div class = "kj-contact_head_wrap ks-clearfix">
+			
+			<div class = "kj-contact_headimg">
+				<img alt = "Steven Jannette" src = "images/steven_jannette.jpg" width = "300" height = "191" />
+			</div>
+			
+			<div class = "kj-contact_headtxt">
+			
+				<div class = "kj-contact_desc">
+					<h1>Steven Jannette</h1>
+					
+					<p class = "kj-contact_contact">
+						<a class = "kj-contact_contactlink" href = "mailto:sj@sjdev.com">
+							<span class = "material-icons kj-contact_contacticon">email</span>
+							<span class = "kj-contact_headlink_txt">sj@sjdev.com</span>
+						</a>
+					</p>
+					
+					<p class = "kj-contact_contact">
+						<a class = "kj-contact_contactlink" href = "https://github.com/kjannette">
+							<span class = "fa fa-github kj-contact_contacticon"></span>
+							<span class = "kj-contact_headlink_txt">github.com/kjannette</span>
+						</a>
+					</p>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+</section>
+<!--End Main Content-->
+
+
+<!--Begin Footer-->
+<footer class = "ks-footer">
+	<div class = "ks-footer_content">
+	
+		<h2>Follow Me</h2>
+		
+		<p>
+			<a href = "http://www.instagram.com/dancin.ted/" target = "_blank">
+				<span class = "ks-icon_circle ks-instagram"><i class = "fa fa-instagram"></i></span>
+			</a>
+			
+			<a href = "https://github.com/kjannette" target = "_blank">
+				<span class = "ks-icon_circle ks-github"><i class = "fa fa-github"></i></span>
+			</a>
+			
+			<a href = "https://twitter.com/steven_jannette" target = "_blank">
+				<span class = "ks-icon_circle ks-twitter"><i class = "fa fa-twitter"></i></span>
+			</a>
+		</p>
+		
+	</div>
+	
+	
+	
+	<div class = "ks-footer_content">
+		
+		<p class = "ks-copy">
+			&#169; Copyright 2018<br class = "ks-break_line ks-nodisplay" />
+			Steven Jannette<br class = "ks-break_line ks-nodisplay" />
+			All Rights Reserved
+		</p>
+		
+	</div>
+</footer>
+<!--End Footer-->
+
+
+<script>
+var kjMenu = document.getElementById("ks-menu_lines1");
+var kjHeader = document.getElementById("ks-mobile_main_heading1");
+var kjHeadWrap = document.getElementById("ks-mobile_heading_wrapper1");
+var kjHeadClose = document.getElementById("ks-mobile_heading_close1");
+
+kjMenu.addEventListener("click", function() {
+	kjHeader.style.visibility = "visible";
+	kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+	kjHeadWrap.style.width = "270px";
+});
+
+kjHeadClose.addEventListener("click", function() {
+	kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
+	kjHeadWrap.style.width = "0px";
+	kjHeader.style.visibility = "hidden";
+});
+
+
+
+// Add smooth scrolling to all links
+$(".ks-heading_link, .ks-mobile_heading_link, #kj-bluetext_link1").on('click', function(event) {
+
+// Prevent default anchor click behavior
+	event.preventDefault();
+
+	// Store hash
+	var hash = this.hash; //alert("Anchor hash is " + hash);
+
+	// Using jQuery's animate() method to add smooth page scroll
+	// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	$('html, body').animate({
+	  scrollTop: $(hash).offset().top
+	}, 800, function(){
+
+	  // Add hash (#) to URL when done scrolling (default click behavior)
+	  window.location.hash = hash;
+	});
+});
+
+</script>
+
+
+</body>
+</html>
