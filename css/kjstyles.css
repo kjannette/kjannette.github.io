@@ -10,7 +10,7 @@ html {
 }
 
 * {
-	font-family:arial;
+	font-family:Roboto;
 	margin:0px;
 	padding:0px;
 	list-style-type:none;
@@ -243,7 +243,7 @@ a.ks-mobile_heading_link:active {
 /*Section & Footer Content*/
 section.ks-main_section {
 	width:100%;
-	padding:100px 0px;
+	padding:73px 0px;
 }
 
 footer.ks-footer {
