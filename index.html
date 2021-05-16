@@ -186,6 +186,7 @@ span.kj-contact_contacticon,
 span.kj-contact_headlink_txt {
 	vertical-align:text-top;
 	font-family: Roboto;
+	font-size: 18px;
 }
 
 a.kj-contact_contactlink:link,
@@ -201,6 +202,17 @@ span.kj-contact_contacticon {
 	font-family: Roboto;
 }
 
+span.email_icon {
+	vertical-align: middle;
+}
+
+span.git_icon {
+	vertical-align: middle;
+}
+
+div.kj-contact_contact_git {
+	margin-top: 15px;
+}
 
 /*All Media Queries*/
 @media only screen and (max-width:900px) {
@@ -559,19 +571,19 @@ span.kj-contact_contacticon {
 				<div class = "kj-contact_desc">
 					<h1>Steven Jannette</h1>
 
-					<p class = "kj-contact_contact">
+					<div class = "kj-contact_contact_lower">
 						<a class = "kj-contact_contactlink" href = "mailto:sj@sjdev.com">
-							<span class = "material-icons kj-contact_contacticon">email</span>
+							<span class = "material-icons email_icon">email</span>
 							<span class = "kj-contact_headlink_txt">sj@sjdev.com</span>
 						</a>
-					</p>
+					</div>
 
-					<p class = "kj-contact_contact">
+					<div class = "kj-contact_contact_git">
 						<a class = "kj-contact_contactlink" href = "https://github.com/kjannette">
-							<span class = "fa fa-github kj-contact_contacticon"></span>
+							<span class = "material-icons git_icon">outbox</span>
 							<span class = "kj-contact_headlink_txt">github.com/kjannette</span>
 						</a>
-					</p>
+					</div>
 				</div>
 
 			</div>
