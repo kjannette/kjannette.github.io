@@ -574,7 +574,7 @@ div.kj-contact_contact_git {
 					<div class = "kj-contact_contact_lower">
 						<a class = "kj-contact_contactlink" href = "mailto:sj@sjdev.com">
 							<span class = "material-icons email_icon">email</span>
-							<span class = "kj-contact_headlink_txt">sj@sjdev.com</span>
+							<span class = "kj-contact_headlink_txt">sj@sjdev.co</span>
 						</a>
 					</div>
 
@@ -622,7 +622,7 @@ div.kj-contact_contact_git {
 	<div class = "ks-footer_content">
 
 		<p class = "ks-copy">
-			&#169; Copyright 2021<br class = "ks-break_line ks-nodisplay" />
+			&#169; Copyright 2022<br class = "ks-break_line ks-nodisplay" />
 			Steven Jannette<br class = "ks-break_line ks-nodisplay" />
 			All Rights Reserved
 		</p>
@@ -633,10 +633,10 @@ div.kj-contact_contact_git {
 
 
 <script>
-var kjMenu = document.getElementById("ks-menu_lines1");
-var kjHeader = document.getElementById("ks-mobile_main_heading1");
-var kjHeadWrap = document.getElementById("ks-mobile_heading_wrapper1");
-var kjHeadClose = document.getElementById("ks-mobile_heading_close1");
+let kjMenu = document.getElementById("ks-menu_lines1");
+let kjHeader = document.getElementById("ks-mobile_main_heading1");
+let kjHeadWrap = document.getElementById("ks-mobile_heading_wrapper1");
+let kjHeadClose = document.getElementById("ks-mobile_heading_close1");
 
 kjMenu.addEventListener("click", function() {
 	kjHeader.style.visibility = "visible";
@@ -659,7 +659,7 @@ $(".ks-heading_link, .ks-mobile_heading_link, #kj-bluetext_link1").on('click', f
 	event.preventDefault();
 
 	// Store hash
-	var hash = this.hash; //alert("Anchor hash is " + hash);
+	let hash = this.hash; //alert("Anchor hash is " + hash);
 
 	// Using jQuery's animate() method to add smooth page scroll
 	// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
