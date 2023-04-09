@@ -151,7 +151,17 @@ a.ks-heading_link:active {
 	color:#0A6FC2;
 }
 
+a.ks-heading_link_outside:link,
+a.ks-heading_link_outside:visited {
+	color:#2196F3;
+	text-transform:uppercase;
+	font-size:1.3em;
+}
 
+a.ks-heading_link_outside:hover,
+a.ks-heading_link_outside:active {
+	color:#0A6FC2;
+}
 
 
 
