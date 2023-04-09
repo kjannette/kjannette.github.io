@@ -353,6 +353,8 @@ div.kj-contact_contact_git {
 					<li><a class = "ks-heading_link" href = "#kj-featured_work1">Featured Work</a></li>
 
 					<li><a class = "ks-heading_link" href = "#kj-contact1">Contact</a></li>
+
+					<li><a class = "ks-heading_link_outside" href = "https://findandexec.com" target = "_blank">Blog</a></li>
 				</ul>
 
 			</div>
@@ -403,6 +405,8 @@ div.kj-contact_contact_git {
 
 				<li><a class = "ks-mobile_heading_link" href = "#kj-featured_work1">Featured Work</a></li>
 
+				<li><a class = "ks-mobile_heading_link" href = "http://www.findandexec.com">Blog</a></li>
+
 				<li><a class = "ks-mobile_heading_link" href = "#kj-contact1">Contact</a></li>
 			</ul>
 		</nav>
@@ -428,28 +432,31 @@ div.kj-contact_contact_git {
 	<div class = "ks-main_content ks-main_content1">
 		<h2>About Me</h2>
 
+		<p>In an AI-generated, algorithmically-driven world, the highest-value attribute is creativity.</p>
 		<p>
-			I create software solutions for businesses online to increase online sales and overall revenue, give them a better web presence and reduce costs.  That means using technology as a lever to make transactions frictionless with a better user experience, and make high-consequence decisions faster.
+			I create software solutions for business.  The word “solution” may be construed as implying a problem to be overcome.  
+			However, I frame it more optimistically: it implies an opportunity realized.
 		</p>
 
 		<p>
-			My applications are written primarily in the Javascript and Python programming languages, but are never constrained by any particular paradigm. The best solution is simply that, regardless of the technology used to arrive at it.
+			In business, that means increasing revenue (sales) or mazimimizing profit by cost reduction.  
+			The first leverages technology to make high-frequency transactions frictionless, with a better user experience.  
+			The second uses tech to make make high-consequence decisions faster, or with lower input of time, labor or other finite resources.
 		</p>
 
 		<p>
-			Please feel free to click through my <a id = "kj-bluetext_link1" class = "kj-bluetext_link" href = "#kj-featured_work1">featured work</a> and view applications that exemplify solutions I have implemented, or check out the code itself on my profile at
-			<a class = "kj-bluetext_link" href = "https://github.com/kjannette" target = "_blank">Github</a>.
+			Please browse my <a id = "kj-bluetext_link1" class = "kj-bluetext_link" href = "#kj-featured_work1">featured work</a> and launch live demo applications exemplifying these prinicpals.
+			They are snippets of applications I’ve built for clients.  
+			View the source code over at my <a class = "kj-bluetext_link" href = "https://github.com/kjannette" target = "_blank">Github</a> repositories.
 		</p>
 
 		<p>
-			When I'm not making machines go,
-			I like to take photographs.
-			I guess that's just making a different kind of machine go, though, isn't it?
-			I share the (better) pictures I take via <a class = "kj-bluetext_link" href = "http://www.instagram.com/dancin.ted/" target = "_blank">Instagram</a>.  Check those out, too.
+			Lately, I have been developing applications in Javascript and Python. But I am never constrained by dogmatic devotion to a particular language, library or stack.  
+			These are, after all, just our tools — a means to an end. </p>
+
+		<p>
+			To read more of my thoughts on that – and other topics relevant to software and business – head over to <a class = "kj-bluetext_link" href = "http://www.findandexec.com" target = "_blank">my blog</a>.
 		</p>
-
-		<p>Thanks for stopping in.</p>
-
 	</div>
 </section>
 
@@ -598,7 +605,7 @@ div.kj-contact_contact_git {
 <!--Begin Footer-->
 <footer class = "ks-footer">
 	<div class = "ks-footer_content">
-
+<!--  
 		<h2>Follow Me</h2>
 
 		<p>
@@ -616,7 +623,7 @@ div.kj-contact_contact_git {
 		</p>
 
 	</div>
-
+-->
 
 
 	<div class = "ks-footer_content">
@@ -639,12 +646,16 @@ let kjHeadWrap = document.getElementById("ks-mobile_heading_wrapper1");
 let kjHeadClose = document.getElementById("ks-mobile_heading_close1");
 
 kjMenu.addEventListener("click", function() {
+
+	console.log('kjMenu function called')
 	kjHeader.style.visibility = "visible";
 	kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
 	kjHeadWrap.style.width = "270px";
 });
 
 kjHeadClose.addEventListener("click", function() {
+
+	console.log('kjHeadClose function called')
 	kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
 	kjHeadWrap.style.width = "0px";
 	kjHeader.style.visibility = "hidden";
