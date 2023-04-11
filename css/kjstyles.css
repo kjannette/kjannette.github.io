@@ -11,6 +11,7 @@ html {
 
 * {
 	font-family:Roboto;
+	font-size: 14px;
 	margin:0px;
 	padding:0px;
 	list-style-type:none;
@@ -26,6 +27,9 @@ img
   height:auto;
 }
 
+a {
+	font-size: 1em;
+}
 a, li.ks-pointer { cursor:pointer; }
 
 a:link,
@@ -117,6 +121,7 @@ div.ks-menu_line {
 }
 
 div.kj-name_tagline {
+	margin-top: 12px;
 	text-align:right;
 }
 
@@ -300,10 +305,6 @@ div.ks-footer_content p.ks-copy {
 	font-family: Roboto;
 }
 
-
-
-
-
 /*Multiple Columns*/
 div.ks-table {
 	display:table;
@@ -358,9 +359,6 @@ div.ks-table_third_noresp .ks-cell:last-child {
 }
 
 
-
-
-
 /*Icon Buttons*/
 span.ks-icon_circle {
 	border-radius:50%;
@@ -373,9 +371,6 @@ span.ks-icon_circle {
 	width:50px;
 	height:50px;
 }
-
-
-
 
 
 /*All Links*/
