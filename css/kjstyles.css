@@ -371,6 +371,11 @@ div.ks-table_third_noresp .ks-cell:last-child {
   width: 500px;
 }
 
+.ks-subhead-one {
+  margin-top: -9px;
+  font-size: 1.15rem;
+}
+
 /*Icon Buttons*/
 span.ks-icon_circle {
   border-radius: 50%;
