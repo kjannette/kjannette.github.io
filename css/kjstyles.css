@@ -266,6 +266,10 @@ a.ks-mobile_heading_link:active {
   color: #0a6fc2;
 }
 
+.ks-bgimg-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /*Section & Footer Content*/
 section.ks-main_section {
   width: 100%;
