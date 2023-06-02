@@ -10,7 +10,6 @@
 
   gtag('config', 'UA-162870981-1');
 </script>
-
 <title>Steven Jannette SJ Dev Software Solutions for Business</title>
 <meta charset = "UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,19 +17,15 @@
 	name="description"
 	content="Software Solutions for Businesses Fullo Stack Javascript React Redux Python Go Golang HTML CSS Django MySQL PostgreSQL MongoDB"
 />
-
 <link rel="shortcut icon" href="images/favicon-new.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon-new.ico" type="image/x-icon">
-
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,8 +35,11 @@
 /*Main Background*/
 div.ks-bgimg {
 	background-image:url('images/main_img.jpg');
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center
 }
-
 
 /*Main Section*/
 section.ks-main_section {
@@ -71,7 +69,6 @@ a.kj-bluetext_link:active {
 	font-family: Roboto;
 }
 
-
 /*Featured Work Component*/
 div.ks-table_quart .ks-cell {
 	position:relative;
@@ -91,8 +88,9 @@ div.kj-featured_work {
 div.kj-desc h4 {
 	color:#8f8f8f;
 	text-align:center;
-	font-size:1.5em;
+	font-size:1.3em;
 	font-family: Roboto;
+	margin-top: 10px;
 	margin-bottom:10px;
 }
 
@@ -107,6 +105,7 @@ div.kj-desc_link { /*border:1px solid red;*/
 	position:absolute;
 	top:286px;
 	bottom:0px;
+	margin-top: 10px;
 	padding-top: 3px;
 	width:100%;
 	font-family: Roboto;
@@ -322,252 +321,199 @@ div.kj-contact_contact_git {
 
 </style>
 </head>
-
 <body>
 <!--Begin Header-->
 <header class = "ks-main_heading ks-clearfix">
-
 	<div class = "ks-table ks-table_third_noresp ks-noborder">
-
 		<div class = "ks-row">
-
 			<!--Begin Cell One-->
 			<div class = "ks-cell">
-
 				<div class = "ks-heading_logo">
 					<a href = "index.html">
 						<img alt = "Steven Jannette Business Web Development Logo" src = "images/img_logo.png" width = "200" height = "114" />
 					</a>
 				</div>
-
 			</div>
 			<!--End Cell One-->
 
 			<!--Begin Cell Two-->
 			<div class = "ks-cell">
-
 				<ul class = "ks-heading_links">
 					<li><a class = "ks-heading_link" href = "#kj-about1">About</a></li>
-
 					<li><a class = "ks-heading_link" href = "#kj-featured_work1">Featured Work</a></li>
-
 					<li><a class = "ks-heading_link" href = "#kj-contact1">Contact</a></li>
-
 				</ul>
-
 			</div>
 			<!--End Cell Two-->
 
 			<!--Begin Cell Three-->
 			<div class = "ks-cell">
-
 				<div class = "kj-name_tagline">
-
 					<div class = "kj-heading_name">
 						<h1>Steven Jannette</h1>
-
 						<p>Software Solutions for Business</p>
 					</div>
-
 					<div id = "ks-menu_lines1" class = "ks-menu_lines ks-nodisplay">
 						<div class = "ks-menu_line"></div>
 						<div class = "ks-menu_line"></div>
 						<div class = "ks-menu_line"></div>
 					</div>
-
 				</div>
-
 			</div>
 			<!--End Cell Three-->
-
 		</div>
-
 	</div>
-
 </header>
 
 <header id = "ks-mobile_main_heading1" class = "ks-mobile_main_heading">
-
 	<div id = "ks-mobile_heading_wrapper1" class = "ks-mobile_heading_wrapper">
 		<div class = "ks-mobile_heading_wrap ks-clearfix">
 			<div id = "ks-mobile_heading_close1" class = "ks-mobile_heading_close">&times;</div>
-
 			<div class = "ks-mobile_heading_logo">
 				<img alt = "Steven Jannette Business Web Development Logo" src = "images/img_logo.png" width = "100" height = "57" />
 			</div>
 		</div>
-
 		<nav class = "ks-mobile_heading_link_wrap">
 			<ul class = "ks-mobile_heading_links">
 				<li><a class = "ks-mobile_heading_link" href = "#kj-about1">About</a></li>
-
 				<li><a class = "ks-mobile_heading_link" href = "#kj-featured_work1">Featured Work</a></li>
-
 				<li><a class = "ks-mobile_heading_link" href = "#kj-contact1">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
-
 </header>
 <!--End Header-->
 
-
 <!--Begin Background Image-->
-<div class = "ks-bgimg">
-	<!--<div class = "ks-bgshade">
-		<div class = "ks-bgtext">
-			<h1>Software Solutions</h1>
-		</div>
-	</div>-->
-</div>
-<!--End Background Image-->
+<div class="ks-bgimg-container">
+	<div class = "ks-bgimg">
+		<!--<div class = "ks-bgshade">
+			<div class = "ks-bgtext">
+				<h1>Software Solutions</h1>
+			</div>
+		</div>-->
+	</div>
 
+
+<!--End Background Image-->
 
 <!--Begin Main Content-->
 <section id = "kj-about1" class = "ks-main_section ks-main_section1">
 	<div class = "ks-main_content ks-main_content1">
 		<h2>About Me</h2>
-
 		<p>In a heuristically-generated, algorithmically-driven world, creativity is the highest-value attribute.</p> 
-
-		<p>I create software solutions for business.  “Solution” might imply a problem to be overcome.  However, I frame it more optimistically — as an opportunity to be realized.</p>
-
-		<p>Opportunity in business means a chance to increase revenue (i.e., sales), or maximize profit by cost reduction.</p>
-
-		<p>The first can be achieved by leveraging technology to make high-frequency transactions frictionless, with an unrivaled user experience. The second, by executing high-consequence decisions faster, with lower input of time, labor or other finite resources.</p>
-
-		<p>Please browse my <a id = "kj-bluetext_link1" class = "kj-bluetext_link" href = "#kj-featured_work1">featured work</a> to launch demo apps exemplifying prior work; snippets of solutions created for clients. You can view the source for these and other projects at <a class = "kj-bluetext_link" href = "https://github.com/kjannette" target = "_blank">Github</a>.</p>
-
+		<p>I create software solutions for business.  “Solution” might imply a problem to be overcome.  However, I frame 
+			it more optimistically — as an opportunity to be realized.
+			Opportunity in business means a chance to increase revenue (i.e., sales), or maximize profit by cost reduction.</p>
+		<p>The first can be achieved by, for example, leveraging Artificial Intelligence to make transactions frictionless.  
+			AI Agents can offer a bespoke concierge experience, tailored to user taste and behavior, instead of a search in the dark. </p>
+		<p>Or consider Machine Learning Agents, fine-tuned to a market and business model, deep-diving data lakes for lost gold: 
+			previously-hidden revenue sources or efficiencies. 
+			Take, for example, a bank's ML engaged to analyze customer's credit habits and create offers maximizing rewards, 
+			in turn incentivizing account signups and increasing market share.
+		</p>
+		<p><a>Chat with an AI Agent</a> that I have developed — get help searching the web, writing a song, or speaking another language.  Experience the potential, then 
+			imagine leveraging Agents purpose-built for widening your moat.</p> 
+		<p>Feel free to browse my <a id = "kj-bluetext_link1" class = "kj-bluetext_link" href = "#kj-featured_work1">featured work</a> to launch snippets of more traditional 
+			solutions I have created for clients. If you are a developer or PM, view the source for these apps and other projects at
+			 <a class = "kj-bluetext_link" href = "https://github.com/kjannette" target = "_blank">Github</a>.</p>
 	</div>
 </section>
 
 <section id = "kj-featured_work1" class = "ks-main_section ks-main_section2">
 	<div class = "ks-main_content ks-main_content2">
 		<h2>Featured Work</h2>
-		<p class = "ks-subhead-one">Click image to launch app</p>
+		<p class = "foo-bar">Click first image to meet my LLM Agents, other images to launch app demos.</p>
 		<!--Begin Table Stack-->
 		<div class = "ks-table ks-table_quart ks-noborder">
-
 			<div class = "ks-row">
-
 				<!--Begin Cell One-->
 				<div class = "ks-cell">
-
 					<div class = "kj-featured_work">
-						<!--<a href = "http://www.execfunc.com/sf/" target = "_blank">     -->
-						
-							<img alt = "Vehicle Sales Inventory and Associate Relational Control" src = "images/expense_track.jpg" width = "300" height = "200" />
+						<!--<a href = "https://www.execfunc.com">-->
+							<img alt = "Artifical Intellignce Development Machine Learning Research" src = "images/posteddit.jpg" width = "300" height = "200" />
 						</a>
-
 						<div class = "kj-desc">
-							<h4>Sales Flow</h4>
-
-							<p>React app (snippet) with SQL storage, created for an automotive retail franchise client for use by sales associate employees.</p>
+							<h4>EX|F Artificial Intelligence</h4>
+							<p>AI assistants that search the web, compose, schedule... and do just about anything else you can imagine.</p>
 						</div>
 					</div>
-
+					<div class = "kj-desc_link">
+						<!--<p><a class = "kj-app_link">View Source on Github</a></p>-->
+					</div>
+				</div>
+				<!--End Cell One-->
+				<!--Begin Cell Two-->
+				<div class = "ks-cell">
+					<div class = "kj-featured_work">
+						<a href = "http://www.findandexec.com/sf/" target = "_blank"> 
+						<img alt = "Vehicle Sales Inventory and Associate Relational Control" src = "images/expense_track.jpg" width = "300" height = "200" />
+						</a>
+						<div class = "kj-desc">
+							<h4>Sales Flow</h4>
+							<p>React app (snippet) created for an automotive retail franchise. Used in sales associate workflow, 
+								 with SQL storage of KPI and vehicle inventory data.</p>
+						</div>
+					</div>
 					<div class = "kj-desc_link">
 						<p><a class = "kj-app_link" href = "https://github.com/kjannette/salesflow" target = "_blank">View Source on Github</a>
 					</div>
 				</div>
-				<!--End Cell One-->
-
-				<!--Begin Cell Two-->
+				<!--End Cell Two-->
+				<!--Begin Cell Three-->
 				<div class = "ks-cell">
-
 					<div class = "kj-featured_work">
-						<!-- <a href = "http://www.execfunc.com/bb/" target = "_blank">  -->
-						
+						<a href = "http://www.findandexec.com/bb/" target = "_blank">
 							<img alt = "Commercial Web Development Software Book Browser" src = "images/book_browser.jpg" width = "300" height = "200" />
 						</a>
-
 						<div class = "kj-desc">
 							<h4>Book Browser</h4>
-
-							<p>Stub sample of a customer-facing app used to purchase and track books, implemented in JS/React.  Originally conceived with a social/forum-like aspect.</p>
+							<p>Demo of JS/React app used to purchase/track books. Originally conceived for rare/vintage book retailer with a social forum feature.</p>
 						</div>
 					</div>
-
 					<div class = "kj-desc_link">
 						<p><a class = "kj-app_link" href = "https://github.com/kjannette/reactnd-project-bookbrowser" target = "_blank">View Source on Github</a>
 					</div>
 				</div>
-				<!--End Cell Two-->
-
-				<!--Begin Cell Three-->
+				<!--End Cell Three-->
+				<!--Begin Cell Four-->
 				<div class = "ks-cell">
-
 					<div class = "kj-featured_work">
-						<!--<a href = "http://www.execfunc.com/bt/" target = "_blank">  -->
-						
+						<a href = "http://www.findandexec.com/bt/" target = "_blank">
 							<img alt = "Business Javascript Development Budgetize App" src = "images/budgetize.jpg" width = "300" height = "200" />
 						</a>
-
 						<div class = "kj-desc">
 							<h4>Budgetize</h4>
-
-							<p>JS app developed for the member dashboard of a business assoc. site.  Snippet features 'monthly' view, a child component of the larger app.</p>
+							<p>JS app developed for member dashboard of a business assoc. site.  Snippet demos child component of the larger app, the 'monthly' budget view.</p>
 						</div>
 					</div>
-
 					<div class = "kj-desc_link">
 						<p><a class = "kj-app_link" href = "https://github.com/kjannette/Budgetizer" target = "_blank">View Source on Github</a>
 					</div>
 				</div>
-				<!--End Cell Three-->
-
-				<!--Begin Cell Four-->
-				<div class = "ks-cell">
-
-					<div class = "kj-featured_work">
-						<a href = "https://www.sjdev.co">
-							<img alt = "Business Web Development Posteddit App" src = "images/posteddit.jpg" width = "300" height = "200" />
-						</a>
-
-						<div class = "kj-desc">
-							<h4>Posteddit</h4>
-
-							<p>User Q&A and support forum created for a SaaS client, utilizing a Python/Django MVC.</p>
-						</div>
-					</div>
-
-					<div class = "kj-desc_link">
-						<p><a class = "kj-app_link" href = "https://github.com/kjannette/posteddit" target = "_blank">View Source on Github</a>
-					</div>
-				</div>
 				<!--End Cell Four-->
-
 			</div>
-
 		</div>
 		<!--End Table Stack-->
-
 	</div>
 </section>
-
 
 <section id = "kj-contact1" class = "ks-main_section ks-main_section2">
 	<div class = "ks-main_content ks-main_content2">
 		<h2>Contact Me</h2>
-
 		<div class = "kj-contact_head_wrap ks-clearfix">
-
 			<div class = "kj-contact_headimg">
 				<img alt = "Steven Jannette Business Web Development" src = "images/steven_jannette.jpg" width = "300" height = "191" />
 			</div>
-
 			<div class = "kj-contact_headtxt">
-
 				<div class = "kj-contact_desc">
 					<h1>Steven Jannette</h1>
-
 					<div class = "kj-contact_contact_lower">
 						<a class = "kj-contact_contactlink" href = "mailto:sj@sjdev.com">
 							<span class = "material-icons email_icon">email</span>
 							<span class = "kj-contact_headlink_txt">sj at sjdev.co</span>
 						</a>
 					</div>
-
 					<div class = "kj-contact_contact_git">
 						<a class = "kj-contact_contactlink" href = "https://github.com/kjannette">
 							<span class = "material-icons git_icon">outbox</span>
@@ -575,15 +521,11 @@ div.kj-contact_contact_git {
 						</a>
 					</div>
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
 </section>
 <!--End Main Content-->
-
 
 <!--Begin Footer-->
 <footer class = "ks-footer">
@@ -607,67 +549,51 @@ div.kj-contact_contact_git {
 
 	</div>
 -->
-
-
 	<div class = "ks-footer_content">
-
 		<p class = "ks-copy">
 			&#169; Copyright 2022 - 2023<br class = "ks-break_line ks-nodisplay" />
 			Steven Jannette<br class = "ks-break_line ks-nodisplay" />
 			All Rights Reserved
 		</p>
-
 	</div>
 </footer>
 <!--End Footer-->
 
 
-<script>
-let kjMenu = document.getElementById("ks-menu_lines1");
-let kjHeader = document.getElementById("ks-mobile_main_heading1");
-let kjHeadWrap = document.getElementById("ks-mobile_heading_wrapper1");
-let kjHeadClose = document.getElementById("ks-mobile_heading_close1");
+	<script>
+	let kjMenu = document.getElementById("ks-menu_lines1");
+	let kjHeader = document.getElementById("ks-mobile_main_heading1");
+	let kjHeadWrap = document.getElementById("ks-mobile_heading_wrapper1");
+	let kjHeadClose = document.getElementById("ks-mobile_heading_close1");
 
-kjMenu.addEventListener("click", function() {
-
-	console.log('kjMenu function called')
-	kjHeader.style.visibility = "visible";
-	kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-	kjHeadWrap.style.width = "270px";
-});
-
-kjHeadClose.addEventListener("click", function() {
-
-	console.log('kjHeadClose function called')
-	kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
-	kjHeadWrap.style.width = "0px";
-	kjHeader.style.visibility = "hidden";
-});
-
-
-
-// Add smooth scrolling to all links
-$(".ks-heading_link, .ks-mobile_heading_link, #kj-bluetext_link1").on('click', function(event) {
-
-// Prevent default anchor click behavior
-	event.preventDefault();
-
-	// Store hash
-	let hash = this.hash; //alert("Anchor hash is " + hash);
-
-	// Using jQuery's animate() method to add smooth page scroll
-	// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-	$('html, body').animate({
-	  scrollTop: $(hash).offset().top
-	}, 800, function(){
-
-	  // Add hash (#) to URL when done scrolling (default click behavior)
-	  window.location.hash = hash;
+	kjMenu.addEventListener("click", function() {
+		kjHeader.style.visibility = "visible";
+		kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+		kjHeadWrap.style.width = "270px";
 	});
-});
 
-</script>
+	kjHeadClose.addEventListener("click", function() {
+		kjHeader.style.backgroundColor = "rgba(0, 0, 0, 0.0)";
+		kjHeadWrap.style.width = "0px";
+		kjHeader.style.visibility = "hidden";
+	});
+	// Add smooth scrolling to all links
+	$(".ks-heading_link, .ks-mobile_heading_link, #kj-bluetext_link1").on('click', function(event) {
 
+	// Prevent default anchor click behavior
+		event.preventDefault();
+		// Store hash
+		let hash = this.hash; //alert("Anchor hash is " + hash);
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		}, 800, function(){
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		});
+	});
 
-</body>
+	</script>
+	</body>
 </html>
